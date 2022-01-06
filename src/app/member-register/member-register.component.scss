@@ -1,0 +1,87 @@
+.content
+{
+    height: 100vh;
+    background-image: linear-gradient(to right, #9f0e88, #e2b7db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form
+{
+    height: 90%;
+    width: 60%;
+    border-radius: 5px;
+    background-color: white;
+
+    .form-title
+    {
+        text-align: center;
+        padding: 2vmin;
+        padding-top: 4vmin;
+
+        h1
+        {
+            font-size: 3.5vmin;
+            font-weight: bolder;
+        }
+
+        p
+        {
+            font-size: 2vmin;
+            color: #797979;
+        }
+    }
+
+    mat-stepper
+    {
+        width: 85%;
+        margin: 0 auto;
+
+        mat-form-field
+        {
+            width: 45vw;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .next-btn-container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .confirm-details
+        {
+            h2
+            {
+                margin: 0px;
+                font-size: 2.5vmin;
+            }
+
+            h3
+            {
+                font-size: 2.3vmin;
+            }
+        }
+
+        .back-container
+        {
+            width: 33%;
+            float: left;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+        }
+
+        .confirm-container
+        {
+            width: 33%;
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

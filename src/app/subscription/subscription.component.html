@@ -1,0 +1,80 @@
+<div class="content">
+    <div class="plan-container" *ngIf="!switch">
+        <div class="title">
+            <h1>Choose a plan that works for you</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-lg-4 col-md-12 col-sm-12 plan-col d-flex justify-content-center">
+                <mat-card class="plan-card" (click)="subscribePlan()">
+                    <mat-card-title>Free</mat-card-title>
+                    <mat-card-subtitle class="subtitle">Limited Access</mat-card-subtitle>
+                    <mat-card-subtitle class="price">
+                      <h2 class="free">$0</h2>
+                      <h3>per month</h3>
+                    </mat-card-subtitle>
+                    <mat-card-content>
+                      <p>Try 3 lessons</p>
+                      <p>No credit card required</p>
+                      <p>Projects with our Cloud IDE</p>
+                      <p>Course completion certificates</p>
+                      <p>Exclusive Slack channel</p>
+                    </mat-card-content>
+                  </mat-card>
+              </div>
+
+              <div class="col-12 col-lg-4 col-md-12 col-sm-12 plan-col d-flex justify-content-center">
+                <mat-card class="plan-card" (click)="subscribePlan()">
+                    <mat-card-title>Silver</mat-card-title>
+                    <mat-card-subtitle class="subtitle">Unlimited Access</mat-card-subtitle>
+                    <mat-card-subtitle class="price">
+                      <h2 class="silver">$10</h2>
+                      <h3>per month</h3>
+                    </mat-card-subtitle>
+                    <mat-card-content>
+                        <p>Get unlimited access</p>
+                        <p>Test your knowledge</p>
+                        <p>100+ guided projects</p>
+                        <p>Projects with our Cloud IDE</p>
+                        <p>Course completion certificates</p>
+                        <p>Exclusive Slack channel</p>
+                    </mat-card-content>
+                  </mat-card>
+              </div>
+
+              <div class="col-12 col-lg-4 col-md-12 col-sm-12 plan-col d-flex justify-content-center">
+                <mat-card class="plan-card" (click)="subscribePlan()">
+                    <mat-card-title>Gold</mat-card-title>
+                    <mat-card-subtitle class="subtitle">Unlimited Access</mat-card-subtitle>
+                    <mat-card-subtitle class="price">
+                      <h2 class="gold">$15</h2>
+                      <h3>per month</h3>
+                    </mat-card-subtitle>
+                    <mat-card-content>
+                        <p>Get unlimited access</p>
+                        <p>Test your knowledge</p>
+                        <p>100+ guided projects</p>
+                        <p>Projects with our Cloud IDE</p>
+                        <p>Course completion certificates</p>
+                        <p>Exclusive Slack channel</p>
+                        <p>Coaching Sessions included</p>
+                    </mat-card-content>
+                  </mat-card>
+              </div>
+            </div>
+        </div>   
+    </div>
+
+    <div class="confirmed-container" *ngIf="switch">
+      <div class="title">
+        <img src="assets/image/confirm.png" class="confirm-image"/>
+        <h1>Thank for subscribing!</h1>
+        <p>Your subscription has been confirmed and will hear from us soon.</p>
+      </div>
+
+      <div class="button">
+        <button mat-raised-button matStepperNext color="primary" (click)="navigateBack()">Back to sign up page</button>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+.content
+{
+    height: 100vh;
+    background-image: linear-gradient(to right, #9f0e88, #e2b7db);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+.plan-container
+{
+    height: 85%;
+    width: 90%;
+
+    .title
+    {
+        text-align: center;
+        padding: 2vmin;
+        margin-bottom: 4vmin;
+
+        h1
+        {
+            font-size: 5vmin;
+            font-weight: bolder;
+        }
+    }
+
+    .plan-col
+    {
+        margin-bottom: 3vmin;
+    }
+
+    .plan-card
+    {
+        transform: translate3d(0,0,0);
+        transition: transform 0.2s ease-out;
+        background-color: white;
+        border-radius: 15px;
+        width: 30vw;
+
+        mat-card-title
+        {
+            color: black;
+            text-align: center;
+            font-weight: bolder;
+        }
+    
+        .subtitle
+        {
+            color: black;
+            text-align: center;
+        }
+    
+        .price
+        {
+            margin-bottom: 6vmin;
+            text-align: center;
+            font-size: 5vmin;
+            font-weight: bolder;
+            margin-top: 6vmin;
+    
+            .free
+            {
+                font-size: 8vmin;
+                color: #9f0e88;
+                margin: 0px;
+            }
+    
+            .silver 
+            {
+                font-size: 8vmin;
+                color: #1c0ee0;
+                margin: 0px;
+            }
+    
+            .gold 
+            {
+                font-size: 8vmin;
+                color: #9f0e88;
+                margin: 0px;
+            }
+        }
+    
+        p
+        {
+            color: black;
+            text-align: center;
+        }
+    }
+
+    .plan-card:hover {
+        transform: translate3d(0, -20px, 0);
+        transition: transform 0.2s ease-in;
+    }
+}
+
+.confirmed-container
+{
+    .title
+    {
+        text-align: center;
+        padding: 2vmin;
+        margin-bottom: 10vmin;
+
+        .confirm-image
+        {
+            display: block;
+            margin: 0 auto;
+            width: 20vmin; 
+            height: 20vmin;
+            position: relative;
+            top: 40%;
+        }
+
+        h1
+        {
+            font-size: 5vmin;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        p
+        {
+            font-size: 2.5vmin;
+        }
+    }
+
+    .button
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
